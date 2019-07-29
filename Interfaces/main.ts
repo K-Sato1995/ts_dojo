@@ -54,3 +54,13 @@ var currentUser: User = {
 
 console.log(currentUser);
 // => { id: 1, name: 'K-Sato', posts: [ { title: 'Title', content: 'BORING' }, { title: 'Title', content: 'BORING' } ] }
+
+// Function Interfaces
+interface satoFunc {
+  (name: string, age: number): string;
+}
+
+let myFunc: satoFunc;
+myFunc = function(name: string, age: number) {
+  return `I'm ${name}, I'm ${age}`;
+};
