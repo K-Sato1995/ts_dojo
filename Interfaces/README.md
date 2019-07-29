@@ -17,3 +17,7 @@ declare var myPoint: Point;
 ```
 
 However, the beauty of Sample B is that if someone authors a library that builds on the myPoint library to add new members, they can easily add to the existing declaration of myPoint:
+
+# References
+
+- [Interfaces · TypeScript](https://www.typescriptlang.org/docs/handbook/interfaces.html)
