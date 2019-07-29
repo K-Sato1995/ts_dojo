@@ -22,3 +22,8 @@ var add4 = function (x, y) {
     return x + y;
 };
 console.log(add4(2)); //=> 12
+// Object as an argument
+var showPost = function (thing) {
+    return thing.name;
+};
+console.log(showPost({ name: "NAME" }));

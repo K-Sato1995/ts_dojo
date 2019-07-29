@@ -22,3 +22,9 @@ const add4 = (x: number, y = 10): number => {
   return x + y;
 };
 console.log(add4(2)); //=> 12
+
+// Object as an argument
+const showPost = (thing: { name: string }): string => {
+  return thing.name;
+};
+console.log(showPost({ name: "NAME" })); //=> NAME
