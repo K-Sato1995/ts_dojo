@@ -64,3 +64,4 @@ let myFunc: satoFunc;
 myFunc = function(name: string, age: number) {
   return `I'm ${name}, I'm ${age}`;
 };
+console.log(myFunc("K-Sato", 24));

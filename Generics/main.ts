@@ -13,3 +13,10 @@ function arr<T>(arg: T[]): T[] {
   return arg;
 }
 arr<number>([2, 3, 4]);
+
+// Generic Types
+interface GenericIntentity {
+  <T>(arg: T): T;
+}
+let myIdentity: GenericIntentity = identity;
+console.log(myIdentity<number>(2));

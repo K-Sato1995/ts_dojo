@@ -12,3 +12,5 @@ function arr(arg) {
     return arg;
 }
 arr([2, 3, 4]);
+var myIdentity = identity;
+console.log(myIdentity(2));
