@@ -1,7 +1,7 @@
 // Interfaces
 interface Person {
   name: string;
-  age: number;
+  age?: number; // ? means that the propery is optionable
 }
 
 function fullName(person: Person): string {
