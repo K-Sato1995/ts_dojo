@@ -24,3 +24,8 @@ var currentUser = {
     posts: [post1, post2]
 };
 console.log(currentUser);
+var myFunc;
+myFunc = function (name, age) {
+    return "I'm " + name + ", I'm " + age;
+};
+console.log(myFunc("K-Sato", 24));

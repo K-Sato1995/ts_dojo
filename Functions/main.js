@@ -26,4 +26,4 @@ console.log(add4(2)); //=> 12
 var showPost = function (thing) {
     return thing.name;
 };
-console.log(showPost({ name: "NAME" }));
+console.log(showPost({ name: "NAME" })); //=> NAME

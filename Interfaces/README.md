@@ -18,6 +18,28 @@ declare var myPoint: Point;
 
 However, the beauty of Sample B is that if someone authors a library that builds on the myPoint library to add new members, they can easily add to the existing declaration of myPoint:
 
+# Function Types
+
+`Interfaces` are also capable of describing function types.
+
+To describe a function type with an interface, we give the interface a call signature
+
+```ts
+interface SearchFunc {
+  (source: string, subString: string): boolean;
+}
+```
+
+Once defined, we can use this function type interface like we would other interfaces.
+
+```ts
+let mySearch: SearchFunc;
+mySearch = function(source: string, subString: string) {
+  let result = source.search(subString);
+  return result > -1;
+};
+```
+
 # References
 
 - [Interfaces · TypeScript](https://www.typescriptlang.org/docs/handbook/interfaces.html)
