@@ -4,27 +4,29 @@ interface Person {
   age?: number; // ? means that the propery is optionable
 }
 
-function fullName(person: Person): string {
-  return `I'm ${person.name} and I'm ${person.age} years old.`; //=> I'm K-Sato and I'm 25 years old.
-}
-
-var person = {
+var ken: Person = {
   name: "K-Sato",
   age: 25
 };
 
-console.log(fullName(person));
+function fullName(p: Person): string {
+  return `I'm ${p.name} and I'm ${p.age} years old.`; //=> I'm K-Sato and I'm 25 years old.
+}
+
+console.log(fullName(ken));
 
 // Array as a property
-interface Credential {
+interface CredentialInfo {
+  id: number;
   tokens: string[];
 }
 
-var items: Credential = {
+var items: CredentialInfo = {
+  id: 2,
   tokens: ["token1", "token2"]
 };
 
-console.log(items); //=> { tokens: [ 'token1', 'token2' ] }
+console.log(items); //=> { id: 2, tokens: [ 'token1', 'token2' ] }
 
 // Array of object as a property
 interface Post {

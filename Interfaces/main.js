@@ -1,12 +1,13 @@
-function fullName(person) {
-    return "I'm " + person.name + " and I'm " + person.age + " years old."; //=> I'm K-Sato and I'm 25 years old.
-}
-var person = {
+var ken = {
     name: "K-Sato",
     age: 25
 };
-console.log(fullName(person));
+function fullName(p) {
+    return "I'm " + p.name + " and I'm " + p.age + " years old."; //=> I'm K-Sato and I'm 25 years old.
+}
+console.log(fullName(ken));
 var items = {
+    id: 2,
     tokens: ["token1", "token2"]
 };
 console.log(items); //=> { tokens: [ 'token1', 'token2' ] }
