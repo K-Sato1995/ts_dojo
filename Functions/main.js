@@ -27,3 +27,7 @@ var showPost = function (thing) {
     return thing.name;
 };
 console.log(showPost({ name: "NAME" })); //=> NAME
+var showObject = function (ob) {
+    return { name: ob.name, age: ob.age };
+};
+console.log(showObject({ name: "test", age: 23 }));

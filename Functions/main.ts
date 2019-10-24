@@ -28,3 +28,8 @@ const showPost = (thing: { name: string }): string => {
   return thing.name;
 };
 console.log(showPost({ name: "NAME" })); //=> NAME
+
+const showObject = (ob: { name: string; age: number | string }): any => {
+  return { name: ob.name, age: ob.age };
+};
+console.log(showObject({ name: "test", age: 23 })); //=> { name: 'test', age: 23 }

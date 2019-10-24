@@ -1,17 +1,17 @@
 // Basic Types
 var nickName: string = "K-Sato";
-const age: number = 123;
+const age: number = 24;
 let male: boolean = true;
-let nationality: any = "";
+let extraInfo: any = { natinality: "Japan", pet: "Dog" };
 
-console.log(nickName, age, male, nationality); //=> K-Sato 123 true
+console.log(nickName, age, male, extraInfo); //=> K-Sato 123 true { natinality: 'Japan', pet: 'Dog' }
 
 // Arrays
-var strs: string[] = ["A", "B"];
-let nums: number[] = [1, 2, 3];
-let nums2: Array<number> = [1, 2, 3];
+const strArray: string[] = ["A", "B"];
+let numArray: number[] = [1, 2, 3];
+let numArray2: Array<number> = [1, 2, 3];
 
-console.log(strs, nums, nums2); ///=> [ 'A', 'B' ] [ 1, 2, 3 ] [ 1, 2, 3 ]
+console.log(strArray, numArray, numArray2); ///=> [ 'A', 'B' ] [ 1, 2, 3 ] [ 1, 2, 3 ]
 
 // Enums
 enum Color {
@@ -23,12 +23,16 @@ enum Color {
 console.log(Color.Red); //=> 0
 
 // Union Type
+let year: string | number;
+year = 24;
+year = "24";
+console.log(typeof year); //=> string
+
 function me(info: string | number): void {
   console.log(info);
 }
-
-console.log(me("K-Sato"));
-console.log(me(562));
+console.log(me("K-Sato")); //=> K-Sato
+console.log(me(24)); //=> 24
 
 // Tuple Type
 let person: [string, number] = ["K-Sato", 234];
