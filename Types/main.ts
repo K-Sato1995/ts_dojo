@@ -2,9 +2,13 @@
 var nickName: string = "K-Sato";
 const age: number = 24;
 let male: boolean = true;
-let extraInfo: any = { natinality: "Japan", pet: "Dog" };
+const anything: any = "Anything";
+let extraInfo: { nationality: string; pet: string } = {
+  nationality: "Japan",
+  pet: "Dog"
+};
 
-console.log(nickName, age, male, extraInfo); //=> K-Sato 123 true { natinality: 'Japan', pet: 'Dog' }
+console.log(nickName, age, male, anything, extraInfo); //=> K-Sato 24 true Anything { nationality: 'Japan', pet: 'Dog' }
 
 // Arrays
 const strArray: string[] = ["A", "B"];
