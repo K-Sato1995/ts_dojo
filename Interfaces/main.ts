@@ -62,7 +62,7 @@ interface satoFunc {
   (name: string, age: number): string;
 }
 
-let myFunc: satoFunc;
+var myFunc: satoFunc;
 myFunc = function(name: string, age: number) {
   return `I'm ${name}, I'm ${age}`;
 };

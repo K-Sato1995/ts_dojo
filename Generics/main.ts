@@ -11,7 +11,15 @@ interface Article {
   title: string;
   views: number;
 }
-console.log(identity<Article>({ title: "title", views: 2 }));
+console.log(
+  identity<Article>({ title: "title", views: 2 })
+);
+
+// More than one arguments
+function twoIdentities<T, U>(arg1: T, arg2: U): [T, U] {
+  return [arg1, arg2];
+}
+console.log(twoIdentities("String", true)); //=> [ 'String', true ]
 
 // Working with arrays
 function arr<T>(arg: T[]): T[] {

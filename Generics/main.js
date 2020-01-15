@@ -8,6 +8,11 @@ console.log(identity(2));
 console.log(identity(true));
 console.log(identity("K-Sato"));
 console.log(identity({ title: "title", views: 2 }));
+// More than one arguments
+function twoIdentities(arg1, arg2) {
+    return [arg1, arg2];
+}
+console.log(twoIdentities("String", true));
 // Working with arrays
 function arr(arg) {
     console.log(arg.length);
@@ -24,4 +29,4 @@ function showIdentities(arg1, arg2) {
     };
     return values;
 }
-console.log(showIdentities("test", 2));
+console.log(showIdentities("test", 2)); //=> { id1: 'test', id2: 2 }

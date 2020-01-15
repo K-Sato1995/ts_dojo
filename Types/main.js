@@ -2,8 +2,12 @@
 var nickName = "K-Sato";
 var age = 24;
 var male = true;
-var extraInfo = { natinality: "Japan", pet: "Dog" };
-console.log(nickName, age, male, extraInfo); //=> K-Sato 123 true { natinality: 'Japan', pet: 'Dog' }
+var anything = "Anything";
+var extraInfo = {
+    nationality: "Japan",
+    pet: "Dog"
+};
+console.log(nickName, age, male, anything, extraInfo); //=> K-Sato 123 true { natinality: 'Japan', pet: 'Dog' }
 // Arrays
 var strArray = ["A", "B"];
 var numArray = [1, 2, 3];
@@ -21,7 +25,7 @@ console.log(Color.Red); //=> 0
 var year;
 year = 24;
 year = "24";
-console.log(typeof year);
+console.log(typeof year); //=> string
 function me(info) {
     console.log(info);
 }
