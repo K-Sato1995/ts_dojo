@@ -2,6 +2,7 @@
 interface Person {
   name: string;
   age?: number; // ? means that the propery is optionable
+  intro?(): void;
 }
 
 var ken: Person = {
@@ -13,7 +14,16 @@ function fullName(p: Person): string {
   return `I'm ${p.name} and I'm ${p.age} years old.`; //=> I'm K-Sato and I'm 25 years old.
 }
 
+var john: Person = {
+  name: "John",
+  age: 23,
+  intro: () => {
+    console.log("Hi");
+  }
+};
+
 console.log(fullName(ken));
+console.log(john.intro()); //=> Hi
 
 // Array as a property
 interface CredentialInfo {
