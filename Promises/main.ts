@@ -1,3 +1,6 @@
+// resolve(value) — if the job finished successfully, with result value.
+// reject(error) — if an error occurred, error is the error object.
+
 const promiseResolved = new Promise<string>((resolve, reject) => {
   resolve("Hello");
 });
