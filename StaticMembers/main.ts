@@ -5,3 +5,5 @@ class Klass {
 }
 
 console.log(Klass.hoge); //=> 文字列
+
+// https://khalilstemmler.com/blogs/typescript/static-members/
