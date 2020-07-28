@@ -33,3 +33,29 @@ const showObject = (ob: { name: string; age: number | string }): any => {
   return { name: ob.name, age: ob.age };
 };
 console.log(showObject({ name: "test", age: 23 })); //=> { name: 'test', age: 23 }
+
+
+// Programming language
+type Log = (message: string, userId?: string) => void
+
+let log: Log = (
+  message,
+  userId = "Not Signed in"
+) => {
+  let time = new Date().toISOString
+  console.log(time, message, userId)
+}
+
+// オーバーロードされた関数
+type Reserve = {
+  (from: Date, to: Date, destination: string): Reservation
+  (from: Date, destination: string): Reservation
+}
+
+let reserve: Reserve = (from: Date, toOrDestination: Date | string, destination?: string) => {
+  if (toOrDestination instanceof Date && destination !== undefined) {
+    // 宿泊旅行を予約する。
+  } else if (typeof toOrDestination === 'string') {
+    // 日帰り旅行を予約する。
+  }
+}
