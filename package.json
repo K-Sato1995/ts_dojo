@@ -1,0 +1,24 @@
+{
+  "name": "ts_dojo",
+  "version": "1.0.0",
+  "description": "s",
+  "main": "index.js",
+  "dependencies": {
+    "@types/jest": "^25.2.3",
+    "jest": "^26.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/K-Sato1995/ts_dojo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/K-Sato1995/ts_dojo/issues"
+  },
+  "homepage": "https://github.com/K-Sato1995/ts_dojo#readme"
+}
