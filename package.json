@@ -5,9 +5,31 @@
   "main": "index.js",
   "dependencies": {
     "@types/jest": "^25.2.3",
-    "jest": "^26.0.1"
+    "eslint": "^7.5.0",
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5"
   },
   "devDependencies": {},
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "plugin:prettier/recommended",
+      "plugin:react/recommended",
+      "prettier",
+      "prettier/react"
+    ],
+    "rules": {
+      "react/prop-types": "off",
+      "prettier/prettier": [
+        "error"
+      ]
+    }
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
   "scripts": {
     "test": "jest"
   },
