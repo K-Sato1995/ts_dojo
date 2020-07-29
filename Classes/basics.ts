@@ -31,3 +31,14 @@ const user1 = new User(1, "John");
 
 user1.intro(); //=> "I'm John"
 user1.showIdName(); //=> 1 'John'
+
+class Test {
+  constructor(private name) {}
+
+  showName() {
+    console.log(name);
+  }
+}
+
+const t = new Test("new name");
+t.showName(); //=> "new name"
